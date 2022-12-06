@@ -1,0 +1,466 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+}
+
+#main {
+
+}
+
+/* Header CSS */
+#header {
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 76px;
+    background-color: rgb(26, 32, 48);
+    border-bottom: 1px solid rgba(240, 240, 240, 0.5);
+}   
+
+#header .logo img {
+    position: absolute;
+    width: 60px;
+    height: 35px;
+    top: 27%;
+    margin-left: 30px;
+}
+
+#header .nav-bar {
+    margin-left: 106px;
+}
+
+#header .nav-bar a {
+    line-height: 76px;
+    padding-left: 16px;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+#header select {
+    position: absolute;
+    top: 50%;
+    right : 16%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    color: #fff;
+}
+
+#header .sign {
+    position: absolute;
+    top: 50%;
+    right : 1%;
+    transform: translateY(-50%);
+}
+
+#header .sign .sign-items{
+    text-decoration: none;
+    color: #fff;
+    padding: 0 16px;
+    text-transform: uppercase; 
+}
+
+.sign .sign-items +.sign-items {
+    border-left: solid 1px;
+}
+/* Header CSS */
+
+/* Slider CSS */
+#slider {
+    position: relative;
+    padding-top: 50%;
+    margin-top: 76px;
+    background: url("/PeakyBlinders/asset/img/slider/slider2.jpg") top center / cover no-repeat;
+}
+
+#slider .text-slider {
+    position: absolute;
+    bottom: 0;
+    color: #fff;
+    font-size: 14px;
+    width: 100%;
+    text-align: center;
+    font-family: gill sans;
+    font-style: italic;
+}
+
+#slider .text-heading {
+    margin: 10px 0;
+}
+
+#slider .text-description {
+    margin: 10px 0;
+}
+/* Slider CSS */
+
+/* Introduce CSS */
+#introduce {
+    background-color: rgb(24, 29, 43);
+}
+
+#introduce .director {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#introduce .director-actor {
+    font-family: 'Taviraj', serif;
+    color: #ccc6a4;
+    font-size: 36px;
+    font-weight: 400;
+    text-align: center;
+    padding: 36px 12px 12px 12px;
+}
+
+#introduce .director-img-name-self {
+    display: flex;
+}
+
+#introduce .director-img {
+    flex: none;
+    width: 33.33333%;
+    padding: 12px;
+}
+
+#introduce .director-img img {
+    height: auto;
+    max-width: 100%;
+}
+
+#introduce .director-name-self {
+    padding: 12px;
+}
+
+#introduce .director-name {
+    font-family: 'Taviraj', serif;
+    color: #ccc6a4;
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 24px;
+}
+
+#introduce .director-self {
+    font-family: 'Taviraj', serif;
+    color: #fff;
+    font-size: 18px;
+    margin-bottom: 24px;
+}
+
+#introduce .actors {
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#introduce .actors-container {
+    flex: none;
+    width: 33.33333%;
+    padding: 12px;
+}
+
+#introduce .actors-items {
+    height: 300px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    background-position: center;
+}
+
+#introduce .actors-name {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(0deg, black, transparent);
+    padding: 10px;
+    padding-top: 100px;
+}
+
+#introduce .actors-name .actors-movie-name {
+    font-size: 26px;
+    color: #cbc6a4;
+    font-family: 'Taviraj', serif;
+}
+
+#introduce .actors-name .actors-real-name {
+    font-size: 18px;
+    color: #fff;
+    font-family: 'Taviraj', serif;
+}  
+/* Introduce CSS finish*/
+
+#movie {
+
+}
+
+#footer {
+
+}
+
+.login-signup-modal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color:#f0f2f5;
+}
+
+.login-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.login-all-users {
+    padding-right: 36px;
+}
+
+.login-logo img {
+    width: 200px;
+    height: 30px;
+}
+
+.login-all-users .login-logo {
+    padding: 0 0 16px;
+}
+
+.login-all-users .login-heading {
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: 0.5px;
+}
+
+.login-all-users .login-description {
+    color: #606770;
+    padding-bottom: 12px;
+    margin-bottom: 12px;
+    font-size: 15px;
+    line-height: 24px;
+}
+
+.logged-users .users-items-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 372px;
+}
+
+.logged-users .users-items {
+    position: relative;
+    background-color: #fff;
+    border: 0.5px solid rgb(240, 240, 240);
+    width: 100px;
+    border-radius: 8px;
+    box-shadow: 0 0 0 1px #dddfe2;
+    margin-right: 16px;
+    margin-bottom: 16px;
+}
+
+.logged-users .users-img {
+    height: 100px;
+    width: 100px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    background-position: center;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.logged-users .users-name {
+    color: #4b4f56;
+    font-size: 14px;
+    line-height: 18px;
+    text-align: center;
+}
+
+.logged-users .remove-users-items {
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, .3);
+    text-align: center;
+    line-height: 16px;
+    cursor: pointer;
+}
+
+.logged-users .ti-close {
+    color: #fff;
+    font-size: 10px;
+}
+
+.logged-users .add-account {
+    border-radius: 50%;
+    text-align: center;
+    line-height: 100px;
+}
+
+.logged-users .ti-plus {
+    font-size: 24px;
+}
+
+.login-container .login-input {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.login-container .login-input-header {
+    background-color: rgb(26, 32, 48);
+    text-align: center;
+    border-top-right-radius: 4px;
+    border-top-left-radius: 4px;
+}
+
+.login-container .logo-login {
+    display: flex;
+    justify-content: center;
+}
+
+.login-container .logo-login-img {
+    display: flex;
+    align-items: center;
+}
+
+.login-input-header img {
+    width: 32px;
+    height: 32px;
+}
+
+.login-input-header h2{
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: 1.5px;
+    color: #fff;
+    font-weight: 500;
+    padding: 20px 4px;
+}
+
+.login-input .login-input-body {
+    display: block;
+    padding: 46px 24px 32px;
+}
+
+.login-input .input-account {
+    width: 100%;
+    padding: 12px;
+    line-height: 1.6;
+    margin-bottom: 24px;
+    box-sizing: border-box;
+    overflow: hidden;
+    border: 1px solid rgba(0,0,0,.14);
+    border-radius: 2px;
+    box-shadow: inset 0 2px 0 rgb(0 0 0 / 2%);
+}
+
+.login-input .login-button {
+    width: 100%;
+    color: #fff;
+    background-color: rgb(26, 32, 48);
+    box-shadow: 0 1px 1px rgb(0 0 0 / 9%);
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    padding: 12px;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+.login-input .forgot-password {
+    display: flex;
+    margin: 10px 0;
+    justify-content: space-between;
+}
+
+.login-input .forgot-password-items {
+    text-decoration: none;
+    color: rgb(26, 32, 48);
+    font-size: 13px;
+}
+
+.login-input .text-other {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 0 14px;
+}
+
+.login-input .text-orther-items {
+    height: 1px;
+    width: 100%;
+    background-color: #dbdbdb;
+}
+
+.text-other span {
+    padding: 0 16px;
+    color: #ccc;
+}
+
+.login-input .button-other {
+    display: flex;
+    justify-content: space-between;
+}
+
+.login-input .button-orther-items {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 2px;
+    border: 1px solid rgba(0,0,0,.26);
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+.login-input .button-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 3px;
+}
+
+.button-img img {
+    width: 22px;
+    height: 22px;
+}
+
+.login-input .button-text {
+    padding: 0 6px 0 3px;
+}
+
+.login-input .login-input-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 36px;
+}
+
+.login-input .sigup-sub {
+    font-size: 14px;
+    color: rgba(0,0,0,.26);
+}
+
+.login-input .sigup-sub a {
+    text-decoration: none;
+    color: rgb(26, 32, 48);
+}
+
+
+
+
